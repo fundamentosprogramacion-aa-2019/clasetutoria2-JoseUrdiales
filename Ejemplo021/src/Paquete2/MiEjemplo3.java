@@ -5,6 +5,8 @@
  */
 package Paquete2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Jose Luis
@@ -13,17 +15,25 @@ public class MiEjemplo3 {
     public static void main(String[] args){
     String nombrePersona;
     String apellidoPersona;
+    String ciudad;
     int edad;
     
-    nombrePersona = "José Luis";
-    apellidoPersona = "Urdiales Cuenca";
-    edad = 20;
-    /**
-    System.out.println("Mi Nombre es: "+nombrePersona+"\n\n\tMi Apellido" 
-            +" es: "+apellidoPersona);
-    */
-    System.out.printf("Mi nombre es: %s\n\n\t Mi apellido es: %s\nMi edad es: %s", 
-            nombrePersona, apellidoPersona, edad);
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Ingrese su nombre por favor");
+    nombrePersona = entrada.nextLine();
+    
+    System.out.println("Ingrese su apellido por favor");
+    apellidoPersona = entrada.nextLine();
+    
+    System.out.println("Ingrese su edad por favor");
+    edad = entrada.nextInt();
+    entrada.nextLine();// ESTO ES UNA LIMPIEZA DEL BUFFER DE ENTRADA
+    
+    System.out.println("Ingrese su ciudad por favor");
+    ciudad = entrada.nextLine();
+
+    System.out.printf("Mi nombre es: %s\nMi apellido es: %s\nMi edad es: %s\nMi ciudad es: %s", 
+            nombrePersona, apellidoPersona, edad, ciudad);
     }
     
 }
