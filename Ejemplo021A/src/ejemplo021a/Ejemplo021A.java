@@ -3,25 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplo021;
+package ejemplo021a;
 
 /**
  *
  * @author Jose Luis
  */
-public class Ejemplo021 {
+public class Ejemplo021A {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String nombre; //Jose Luis
-        String apellido;
-        int edad;
-        nombre = "Jose";
-        apellido = "Urdiales";
-        edad = 15;
-        System.out.println("Mi Nombre es : "+nombre+"\nMi apellido es: "+apellido+"\nMi edad es: "+ edad);
+        // TODO code application logic here
     }
     
 }
